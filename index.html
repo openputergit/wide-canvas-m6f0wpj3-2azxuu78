@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-indigo-950 min-h-screen pb-20">
+    <div class="container mx-auto px-4">
+        <!-- Back Button -->
+        <button onclick="window.location.href='index.html'" class="text-white mt-8 flex items-center">
+            <i class="bi bi-arrow-left mr-2"></i> Back to Home
+        </button>
+
+        <!-- Title -->
+        <h1 class="text-3xl text-white font-bold mt-8">Biology</h1>
+
+        <!-- Search Bar -->
+        <div class="mt-6">
+            <div class="relative">
+                <input type="text" placeholder="Search For Topics" class="w-full p-4 rounded-full bg-indigo-900 text-white focus:outline-none focus:ring-2 focus:ring-purple-400">
+                <button class="absolute right-4 top-1/2 transform -translate-y-1/2">
+                    <i class="bi bi-search text-white text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Chapters -->
+        <div class="mt-8">
+            <h2 class="text-2xl text-white mb-4">Chapters</h2>
+            
+            <!-- Chapter Grid -->
+            <div class="grid gap-4">
+                <!-- Cell Biology -->
+                <div class="bg-green-400 bg-opacity-20 rounded-lg p-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl text-white">Cell Biology</h3>
+                        <span class="text-white opacity-80">0/5 Topics</span>
+                    </div>
+                    <div class="mt-4 space-y-3">
+                        <a href="https://youtu.be/8IlzKri08kk" target="_blank" class="block bg-white bg-opacity-10 p-3 rounded-lg text-white hover:bg-opacity-20 transition-all">
+                            <div class="flex justify-between items-center">
+                                <span>Cell Structure</span>
+                                <i class="bi bi-play-circle"></i>
+                            </div>
+                        </a>
+                        <a href="https://youtu.be/Zs1539RegrE" target="_blank" class="block bg-white bg-opacity-10 p-3 rounded-lg text-white hover:bg-opacity-20 transition-all">
+                            <div class="flex justify-between items-center">
+                                <span>Cell Division</span>
+                                <i class="bi bi-play-circle"></i>
+                            </div>
+                        </a>
+                        <a href="https://youtu.be/qCLmR9-YY7o" target="_blank" class="block bg-white bg-opacity-10 p-3 rounded-lg text-white hover:bg-opacity-20 transition-all">
+                            <div class="flex justify-between items-center">
+                                <span>Cell Transport</span>
+                                <i class="bi bi-play-circle"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Human Physiology -->
+                <div class="bg-teal-400 bg-opacity-20 rounded-lg p-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl text-white">Human Physiology</h3>
+                        <span class="text-white opacity-80">0/4 Topics</span>
+                    </div>
+                    <div class="mt-4 space-y-3">
+                        <a href="https://youtu.be/URUJD5NEXC8" target="_blank" class="block bg-white bg-opacity-10 p-3 rounded-lg text-white hover:bg-opacity-20 transition-all">
+                            <div class="flex justify-between items-center">
+                                <span>Digestive System</span>
+                                <i class="bi bi-play-circle"></i>
+                            </div>
+                        </a>
+                        <a href="https://youtu.be/v43SxN0C-JU" target="_blank" class="block bg-white bg-opacity-10 p-3 rounded-lg text-white hover:bg-opacity-20 transition-all">
+                            <div class="flex justify-between items-center">
+                                <span>Circulatory System</span>
+                                <i class="bi bi-play-circle"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Genetics -->
+                <div class="bg-purple-400 bg-opacity-20 rounded-lg p-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl text-white">Genetics</h3>
+                        <span class="text-white opacity-80">0/3 Topics</span>
+                    </div>
+                    <div class="mt-4 space-y-3">
+                        <a href="https://youtu.be/NR3779ef9yQ" target="_blank" class="block bg-white bg-opacity-10 p-3 rounded-lg text-white hover:bg-opacity-20 transition-all">
+                            <div class="flex justify-between items-center">
+                                <span>DNA Structure</span>
+                                <i class="bi bi-play-circle"></i>
+                            </div>
+                        </a>
+                        <a href="https://youtu.be/PMGvnKsjLP8" target="_blank" class="block bg-white bg-opacity-10 p-3 rounded-lg text-white hover:bg-opacity-20 transition-all">
+                            <div class="flex justify-between items-center">
+                                <span>Inheritance</span>
+                                <i class="bi bi-play-circle"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-indigo-900 p-4">
+        <div class="flex justify-around max-w-md mx-auto">
+            <button class="flex flex-col items-center text-white">
+                <i class="bi bi-book text-xl"></i>
+                <span class="text-sm mt-1">Learn</span>
+            </button>
+            <button class="flex flex-col items-center text-white opacity-50">
+                <i class="bi bi-grid text-xl"></i>
+                <span class="text-sm mt-1">Dashboard</span>
+            </button>
+            <button class="flex flex-col items-center text-white opacity-50">
+                <i class="bi bi-person text-xl"></i>
+                <span class="text-sm mt-1">Profile</span>
+            </button>
+        </div>
+    </nav>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
